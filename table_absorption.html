@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<!-- td tag에다가 rowspan="2" 속성을 쓰면
+2개의 열을 병합시킬 수 있음 -->
+<!-- td tag에다가 colspan="4" 속성을 쓰면
+4개의 행을 병합시킬 수 있음 -->
+    <table border="1">
+    <thead>
+        <tr>
+        <th>name</th><th>gender</th><th>job</th><th>elite</th><th>money</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>천화</td><td rowspan="2">female</td><td>Caster</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+        <td>메이</td><td>Sniper</td><td rowspan="2">2</td><td>6 ten thousand</td>
+        </tr>
+        <tr>
+        <td>실버애쉬</td><td rowspan="2">male</td><td>Guard</td><td>18 ten thousand</td>
+        </tr>
+        <tr>
+        <td>오키도</td><td>Vanguard</td><td>1</td><td>0</td>
+        </tr>
+    </tbody>
+    <tfoot>
+<!-- td tag에 이 속성(style="text-align: right;")을
+쓰면 오른쪽 정렬을 할 수 있음 -->
+        <td>sum</td><td colspan="4" style="text-align: right;">24 ten thousand</td>
+    </tfoot>
+    </table>
+</body>
+</html>

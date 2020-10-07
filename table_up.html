@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<!-- table를 잘 구조화 시켜야지만 의미가 크다.
+table에는 헤드와 컨텐츠를 가지고 있다.
+헤드(thead)는 구별, 바디(tbody)는 내용.
+이를 할 필요는 없지만 내가 정해놓지 않으면 
+브라우저가 알아서 함 -->
+<!-- thead안에 구성요소를 td대신 th를 쓸 수 있음 -->
+<!-- thead와 tbody 그리고 tfoot은 코드 위치가 변해도
+table 위치는 변하지 않는다. -->
+<table border="1">
+    <thead>
+        <tr>
+        <th>name</th><th>gender</th><th>job</th><th>elite</th><th>money</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr>
+        <td>실버애쉬</td><td>male</td><td>Guard</td><td>2</td><td>18 ten thousand</td>
+        </tr>
+        <tr>
+        <td>천화</td><td>female</td><td>Caster</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+        <td>오키도</td><td>male</td><td>Vanguard</td><td>1</td><td>0</td>
+        </tr>
+        <tr>
+        <td>메이</td><td>female</td><td>Sniper</td><td>2</td><td>6 ten thousand</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>sum</td><td></td><td></td><td></td><td>24 ten thousand</td>
+    </tfoot>
+</table>
+</body>
+</html>
